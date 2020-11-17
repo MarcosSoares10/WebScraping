@@ -6,7 +6,7 @@ from unicodedata import normalize
 
 def get_ted_website_publication(url):
     if "ted" not in str(url):
-        raise Exception("Url Invalida")
+        raise Exception("Url error")
 
     response = requests.get(url)
 
@@ -38,7 +38,7 @@ def get_ted_website_publication(url):
 
 def get_olhardigital_website_publication(url):
     if "olhardigital" not in str(url):
-        raise Exception("Url Invalida")
+        raise Exception("Url error")
 
     response = requests.get(url)
 
@@ -71,7 +71,7 @@ def get_olhardigital_website_publication(url):
 
 def get_startse_website_publication(url):
     if "startse" not in str(url):
-        raise Exception("Url Invalida")
+        raise Exception("Url error")
 
     response = requests.get(url)
     
